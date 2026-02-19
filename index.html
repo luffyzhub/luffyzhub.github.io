@@ -1,74 +1,172 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>LuffyZHub</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <style>
-    body {
-      margin:0;
-      font-family: Arial, sans-serif;
-      background: linear-gradient(180deg,#0a0a0a,#1a0026);
-      color:white;
-      text-align:center;
-    }
-    header {
-      padding:80px 20px;
-    }
-    h1 {
-      font-size:48px;
-      color:#b300ff;
-      margin-bottom:10px;
-    }
-    h2 {
-      color:#d580ff;
-    }
-    section {
-      padding:60px 20px;
-      max-width:800px;
-      margin:auto;
-    }
-    .btn {
-      display:inline-block;
-      margin-top:20px;
-      padding:12px 24px;
-      background:#b300ff;
-      color:white;
-      text-decoration:none;
-      border-radius:6px;
-    }
-    footer {
-      padding:30px;
-      color:#aaa;
-    }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LuffyZHub | Custom Creator Designs</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{
+  font-family:'Poppins',sans-serif;
+  background:linear-gradient(180deg,#0a0a0a,#14001f);
+  color:white;
+  line-height:1.6;
+}
+
+.container{
+  max-width:1100px;
+  margin:auto;
+  padding:0 20px;
+}
+
+header{
+  padding:100px 20px;
+  text-align:center;
+  background:radial-gradient(circle at top,#1f0030,#000);
+}
+
+.logo{
+  font-size:52px;
+  font-weight:700;
+  color:#c84dff;
+}
+
+.tagline{
+  font-size:20px;
+  margin-top:10px;
+  color:#ddd;
+}
+
+.btn{
+  display:inline-block;
+  margin-top:30px;
+  padding:14px 28px;
+  background:#b300ff;
+  border-radius:8px;
+  text-decoration:none;
+  color:white;
+  font-weight:600;
+  transition:.3s;
+}
+
+.btn:hover{
+  background:#d24dff;
+  transform:translateY(-2px);
+}
+
+section{
+  padding:80px 0;
+}
+
+h2{
+  text-align:center;
+  margin-bottom:40px;
+  color:#c84dff;
+  font-size:32px;
+}
+
+.about p{
+  text-align:center;
+  max-width:700px;
+  margin:auto;
+  color:#ccc;
+}
+
+.services{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:20px;
+}
+
+.card{
+  background:#120018;
+  padding:25px;
+  border-radius:12px;
+  text-align:center;
+  border:1px solid #2a003d;
+  transition:.3s;
+}
+
+.card:hover{
+  transform:translateY(-5px);
+  border-color:#b300ff;
+}
+
+.portfolio{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+  gap:20px;
+}
+
+.portfolio-item{
+  height:160px;
+  background:#1a0026;
+  border-radius:10px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  color:#777;
+  border:1px dashed #333;
+}
+
+footer{
+  text-align:center;
+  padding:40px 20px;
+  background:#07000a;
+  color:#777;
+}
+</style>
 </head>
 
 <body>
 
 <header>
-  <h1>LuffyZHub</h1>
-  <p>Get your customized designs and improve your impression.</p>
-  <a class="btn" href="https://www.instagram.com/theycallme_.luffy">Contact on Instagram</a>
+  <div class="container">
+    <div class="logo">LuffyZHub</div>
+    <div class="tagline">Get your customized designs and improve your impression</div>
+    <a href="https://www.instagram.com/theycallme_.luffy" class="btn">Contact on Instagram</a>
+  </div>
 </header>
 
-<section>
-  <h2>About</h2>
-  <p>LuffyZHub creates custom digital visuals for creators, streamers and online brands. 
-  Every design is tailored to your style and audience.</p>
+<section class="about">
+  <div class="container">
+    <h2>About</h2>
+    <p>
+      LuffyZHub is a custom digital design service helping creators, streamers and online brands
+      build a powerful visual identity. Every design is tailored to your niche, style and audience.
+    </p>
+  </div>
 </section>
 
 <section>
-  <h2>Services</h2>
-  <p>Stream Overlays • Thumbnails • Logos • Custom Graphics • Creator Assets</p>
+  <div class="container">
+    <h2>Services</h2>
+    <div class="services">
+      <div class="card">Stream Overlays</div>
+      <div class="card">Thumbnails</div>
+      <div class="card">Logos & Branding</div>
+      <div class="card">Custom Graphics</div>
+      <div class="card">Creator Assets</div>
+    </div>
+  </div>
 </section>
 
 <section>
-  <h2>Portfolio</h2>
-  <p>Custom works coming soon.</p>
+  <div class="container">
+    <h2>Portfolio</h2>
+    <div class="portfolio">
+      <div class="portfolio-item">Work 1</div>
+      <div class="portfolio-item">Work 2</div>
+      <div class="portfolio-item">Work 3</div>
+    </div>
+  </div>
 </section>
 
 <footer>
-  © 2026 LuffyZHub
+  © 2026 LuffyZHub • Custom Creator Designs
 </footer>
 
 </body>
