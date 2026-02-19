@@ -8,6 +8,25 @@
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 
 <style>
+
+.portfolio{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:20px;
+  margin-top:30px;
+}
+
+.portfolio img{
+  width:100%;
+  border-radius:10px;
+  border:1px solid #2a003d;
+  transition:.3s;
+}
+
+.portfolio img:hover{
+  transform:scale(1.05);
+  border-color:#b300ff;
+}
 *{margin:0;padding:0;box-sizing:border-box}
 body{
   font-family:'Poppins',sans-serif;
